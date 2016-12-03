@@ -2,6 +2,8 @@ package javatest;
 
 import java.util.Scanner;
 
+import static java.lang.Math.*;
+
 public class task2 {
     public static void main(String[] args) {
 
@@ -28,23 +30,23 @@ public class task2 {
 
 
     //TASK 2.2
-   Scanner in = new Scanner(System.in);
-    double a, b, c, d;
+        in = new Scanner(System.in);
+    double a1, b1, c1, d1;
     double x1, x2;
 System.out.println("Введите а: ");
-    a = in.nextDouble();
+    a1 = in.nextDouble();
 System.out.println("Введите b: ");
-    b = in.nextDouble();
-System.out.println("Введите c: ");
-    c = in.nextDouble();
-    d = Math.pow(b, 2) - (4 * a * c);
-if (d>=0){
-        x1 = ((-1) * b + Math.sqrt(d)) / 2 * a;
-        x2 = ((-1) * b - Math.sqrt(d)) / 2 * a;
+      b1 = in.nextDouble();
+        System.out.println("Введите c: ");
+        c1 = in.nextDouble();
+        d1 = pow(b1, 2) - (4 * a1 * c1);
+        if (d1>=0){
+            x1 = ((-1) * b1 + sqrt(d1)) / 2 * a1;
+            x2 = ((-1) * b1 - sqrt(d1)) / 2 * a1;
         System.out.printf("x1 = " + x1 + " x2 = " + x2);
     }
-else if (d == 0){
-        x1 = (-1) * b;
+else if (d1 == 0){
+        x1 = (-1) * b1;
         System.out.printf("x1, x2 = " + x1);
     }
 else
@@ -89,15 +91,15 @@ else
 
 
     //TASK 2.4
-        Scanner scan = new Scanner(System.in);
+        scan = new Scanner(System.in);
 
         //enter number of rows
         System.out.println("размер массива: ");
-        int numRows = scan.nextInt();
+        numRows = scan.nextInt();
 
         //init arrays for saving rows and they length
-        String[] arrayOfRows = new String[numRows];
-        int[] arrayOfRowsLength = new int[numRows];
+        arrayOfRows = new String[numRows];
+        arrayOfRowsLength = new int[numRows];
 
         //enter and save rows
         for (int i = 0; i < numRows; i++) {
